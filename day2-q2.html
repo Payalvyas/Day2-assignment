@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            Welcome to LetsUpgrade JS
+        </title>
+        <h2>Difference between var,let and const</h2>
+    </head>
+    <body>
+    <script>
+            //Var
+            //The scope is global when a var variable is declared outside a function
+             var name = "Payal";
+             function myFunc() 
+             {
+              var name2= "Vyas";
+             }
+            console.log(name); //Global
+            //console.log(name2); //Local to the function so throws an error
+
+            //let
+            //So a variable declared in a block with let  is only available for use within that block
+            let city="Hyderabad"
+            {
+                let city="Mumbai";
+                console.log(city); // Prints Mumbai
+            }
+                console.log(city); //Prints Hyderabad
+            //const
+            //a const object cannot be updated, the properties of this objects can be updated.
+            const country="India"
+            console.log(country);
+            country="USA" //error: Assignment to constant variable. 
+
+    </script>
+    </body>
+</html>
